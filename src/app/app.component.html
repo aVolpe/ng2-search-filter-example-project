@@ -2,8 +2,10 @@
     {{title}}
 </h1>
 <div>
-    <input type="text" [(ngModel)]="firstName">
-    <input type="text" [(ngModel)]="lastName">
+    <input type="text" [(ngModel)]="firstName" />
+    <input type="text" [(ngModel)]="lastName" />
+    <br />
+    <input type="button" (click)="clear()" value="Clear"/>
     <div *ngFor="let item of items | filter:firstName | filter:lastName">
         <p>
             {{item.name}} {{item.lastName}}

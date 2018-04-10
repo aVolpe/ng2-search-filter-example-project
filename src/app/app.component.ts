@@ -15,4 +15,10 @@ export class AppComponent {
       {name: 'archie', lastName: 'test4'},
       {name: 'jake', lastName: 'test2'},
       {name: 'richard', lastName: 'test3'}];
+
+
+    clear() {
+        this.firstName = '';
+        this.lastName = '';
+    }
 }
