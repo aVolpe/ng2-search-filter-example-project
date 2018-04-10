@@ -1,3 +1,13 @@
 <h1>
-  {{title}}
+    {{title}}
 </h1>
+<div>
+    <input type="text" [(ngModel)]="firstName">
+    <input type="text" [(ngModel)]="lastName">
+    <div *ngFor="let item of items | filter:firstName | filter:lastName">
+        <p>
+            {{item.name}} {{item.lastName}}
+        </p>
+    </div>
+
+</div>
