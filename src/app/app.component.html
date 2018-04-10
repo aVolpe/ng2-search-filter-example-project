@@ -12,4 +12,8 @@
         </p>
     </div>
 
+    <ng-container *ngIf="(items | filter:firstName) as data" >
+        <pre>{{ data | json }}</pre>
+    </ng-container>
+
 </div>
